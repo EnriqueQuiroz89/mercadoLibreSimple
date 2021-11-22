@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <style>
+        body {
+            min-height: 150vh;
+            background-color: rgb(237, 237, 238);
+        }
+
+        li:a {
+            opacity: .1;
+        }
+
+        #navbar {
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            background-color: yellow;
+            display: block;
+        }
+
+        nav ul {
+            margin: 0px;
+            padding: 5px;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        #search-box {
+            position: relative;
+            display: inline;
+            margin: auto;
+        }
+
+        #left {
+            float: left;
+            width: 70%;
+        }
+
+        #right {
+            float: right;
+            width: 28%;            
+            background-color: rgb(185, 179, 179);
+        }
+
+        aside,
+        section {
+            padding: 2px;           
+        }
+
+        #contenido {
+            margin: 50px 0px 0px 0px;
+            width: 100%;
+        }
+
+        .fullcard {
+            width: 150px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            margin: 10px 5px;
+            padding: 4px;
+            background-color: white;
+                    }
+
+        .fullcard img {
+            width: 130px;
+            display: block;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        .cardPrice {
+            padding: 0px 10px ;            
+        }
+
+        .cardTitle {
+            text-align: left;
+            padding: 0px 10px ;
+        }
+
+        .cardDescription {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: left;
+            padding: 0px 3px 0px 3px;
+        }
+
+        .fullcard:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,.5), 0 6px 6px rgba(0,0,0,.23);
+        
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!--Barra de navegacion y busqueda-->
+    <div id="navbar">
+        <div id="search-box">
+            <form action="#">
+                <label for="search">Buscar
+                    <input type="search" id="search">
+                </label>
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="">Promo</a></li>
+                    <li><a href="">Damas</a></li>
+                    <li><a href="">Caballeros</a></li>
+                    <li><a href="">Niños</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!--Contenido y barra lateral-->
+    <div id="contenido">
+        <section id="left">
+            <h2>Contenido</h2>
+               <div class="fullcard">
+                <div class="cardContent">
+                    <div class="cardImage">
+                        <img src="https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:best/mg/gm/3pp/asr/286cd7f2-b8b0-4c95-adab-611fff04d34e.bdaab165ed24460fed8ce90a12d0377b.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff"
+                            alt="Triciclo Apache basico">
+                    </div>
+                     <div class="cardPrice">
+                       <h3> <strong>$1,900</strong></h3>                       
+                    </div>
+                    <div class="cardTitle">
+                        <h4>Triciclo Apache</h4>
+                    </div>
+                    <div class="cardDescription">
+                       <p>El mejor triciclo para niños de 2 a 3 años</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fullcard">
+                <div class="cardContent">
+                    <div class="cardImage">
+                        <img src="https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:best/mg/gm/3pp/asr/286cd7f2-b8b0-4c95-adab-611fff04d34e.bdaab165ed24460fed8ce90a12d0377b.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff"
+                            alt="Triciclo Apache basico">
+                    </div>
+                     <div class="cardPrice">
+                       <h3> <strong>$1,900</strong></h3>                       
+                    </div>
+                    <div class="cardTitle">
+                        <h4>Triciclo Apache</h4>
+                    </div>
+                    <div class="cardDescription">
+                       <p>El mejor triciclo para niños de 2 a 3 años</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fullcard">
+                <div class="cardContent">
+                    <div class="cardImage">
+                        <img src="https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:best/mg/gm/3pp/asr/286cd7f2-b8b0-4c95-adab-611fff04d34e.bdaab165ed24460fed8ce90a12d0377b.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff"
+                            alt="Triciclo Apache basico">
+                    </div>
+                     <div class="cardPrice">
+                       <h3> <strong>$1,900</strong></h3>                       
+                    </div>
+                    <div class="cardTitle">
+                        <h4>Triciclo Apache</h4>
+                    </div>
+                    <div class="cardDescription">
+                       <p>El mejor triciclo para niños de 2 a 3 años</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <aside id="right">
+            
+            <div id="categorias">
+               <p><h4>Categorias</h4></p>
+                <ul>
+                    <li><a href="#">Categoria 1</a></li>
+                    <li><a href="#">Categoria 2</a></li>
+                    <li><a href="#">Categoria 3</a></li>
+                    <li><a href="#">Categoria 4</a></li>                    
+                </ul>
+            </div>
+
+            <div id="categorias">
+                <p><h4>Condición</h4></p>
+                 <ul>
+                     <li><a href="#">Nuevo</a></li>
+                     <li><a href="#">Usado</a></li>
+                     <li><a href="#">Reacondicionado</a></li>
+                 </ul>
+             </div>
+            
+             <div id="ubicacion">
+                <p><h4>Ubicacion</h4></p>
+                 <ul>
+                     <li><a href="#">Jalisco</a></li>
+                     <li><a href="#">Ciudad MX</a></li>
+                     <li><a href="#">Quintana Roo</a></li>
+                     <li><a href="#">Estado de México</a></li>
+                 </ul>
+             </div>
+
+        
+        </aside>
+
+    </div>
+</body>
+
+</html>
